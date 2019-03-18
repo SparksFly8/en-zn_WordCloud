@@ -1,6 +1,6 @@
 # 中英文词云图
 
->引言: "**词云**"，又称文字云，是由**词汇**组成**类似云的彩色图形**。可对网络文本中出现**频率较高**的“**关键词**”予以**视觉上的突出**，形成"关键词云层"或"**关键词渲染**"，从而**过滤掉大量的文本信息**，使浏览者只要一眼扫过文本就可以领略文本的主旨。                                        
+>引言: "**词云**"，又称文字云，是由**词汇**组成**类似云的彩色图形**。可对网络文本中出现**频率较高**的“**关键词**”予以**视觉上的突出**，形成"关键词云层"或"**关键词渲染**"，从而**过滤掉大量的文本信息**，使浏览者只要一眼扫过文本即可领略文本主旨。                                        
 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——摘自百度百科
 
 ![在这里插入图片描述](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1552824473304&di=f17a2bb6816ca4cba4ffccffae7d211c&imgtype=0&src=http://5b0988e595225.cdn.sohucs.com/q_70,c_zoom,w_640/images/20180808/54c5b98f04494d57a7ad7e6fe592dbe7.jpeg)
@@ -34,6 +34,7 @@ plt.show()      # 在IDE中显示图片
 wc.to_file('C:\\Users\\Administrator\\Desktop\\wordcloud.png')
 ```
 生成**英文词云图**：
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190317181702156.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NMX1dvcmxk,size_16,color_FFFFFF,t_70)
 #### ②9行代码中文文本速成词云图
 
@@ -73,6 +74,7 @@ wc.to_file('C:\\Users\\Administrator\\Desktop\\wordcloud.png')
  3. HMM 参数用来控制是否使用HMM 模型；(选填，默认为False)
 
 生成**中文词云图**如下：
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190317200713793.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NMX1dvcmxk,size_16,color_FFFFFF,t_70)
 #### 【补充】：
 
@@ -171,11 +173,15 @@ wc = WordCloud(mask=image, background_color='white',max_font_size=45,
 //...
 ```
 女孩的图片`girl.png`如下(建议使用**白底**或具有显著鲜明区分的背景图)：
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190317232000961.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NMX1dvcmxk,size_16,color_FFFFFF,t_70)
 生成的**英文词云图**如下：
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190317232206834.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NMX1dvcmxk,size_16,color_FFFFFF,t_70)
 生成的**中文词云图**如下：
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190318114132220.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NMX1dvcmxk,size_16,color_FFFFFF,t_70)
+
 如果想要使用背景图的颜色来填充词语的颜色，则**部分代码**如下：
 
 ```js
@@ -192,6 +198,7 @@ plt.imshow(wc.recolor(color_func=image_colors)) # 重置wc实例中的词的颜�
 //...
 ```
 生成**英文词云图**如下：
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190317233359460.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NMX1dvcmxk,size_16,color_FFFFFF,t_70)
 
 ## 三、完整代码&&总体步骤：
