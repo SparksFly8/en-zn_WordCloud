@@ -63,6 +63,7 @@ plt.show()      # 在IDE中显示图片
 wc.to_file('C:\\Users\\Administrator\\Desktop\\wordcloud.png')
 ```
 **【解释】：**
+
  1）因为是中文文本，使用open()读取数据时往往不是`Unicode`码，所以编码方案需使用`gbk`，若使用`utf-8`可能会报编码错误；反之，英文文本建议用`utf-8`编码。
  
  2）此处WordCloud中的`font_path`参数是字体文件路径，因为WordCloud中**没有内置相关中文字体**，所以需要我们自己**手动添加**。(此处我用的是**微软雅黑**，中英文字体**获取方式见文章底部**)
@@ -175,9 +176,11 @@ wc = WordCloud(mask=image, background_color='white',max_font_size=45,
 女孩的图片`girl.png`如下(建议使用**白底**或具有显著鲜明区分的背景图)：
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190317232000961.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NMX1dvcmxk,size_16,color_FFFFFF,t_70)
+
 生成的**英文词云图**如下：
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190317232206834.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NMX1dvcmxk,size_16,color_FFFFFF,t_70)
+
 生成的**中文词云图**如下：
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190318114132220.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NMX1dvcmxk,size_16,color_FFFFFF,t_70)
